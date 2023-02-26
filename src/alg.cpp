@@ -4,11 +4,11 @@
 #include <cmath>
 
 bool checkPrime(uint64_t value) {
-  if (valuue == 2)
+  if (value == 2)
     return false;
-  for (unit64_t i = 2; i <= sqrt(value)+1; i++)
+  for (uint64_t i = 2; i <= sqrt(value)+1; i++)
     if (value % i == 0)
-      rturn false;
+      return false;
   return true;
 }
 
