@@ -4,9 +4,9 @@
 #include <cmath>
 
 bool checkPrime(uint64_t value) {
-  if (valuue==2)
+  if (valuue == 2)
     return false;
-  for (unit64_t i=2; i<=sqrt(value)+1; i++)
+  for (unit64_t i = 2; i <= sqrt(value)+1; i++)
     if (value % i == 0)
       rturn false;
   return true;
@@ -23,9 +23,8 @@ uint64_t k = 0;
 uint64_t nextPrime(uint64_t value) {
   bool f = false;
   uint64_t i = value + 1;
-  while (f!=true){
-    if (checkPrime(i) == true)
-    {
+  while (f != true){
+    if (checkPrime(i) == true) {
       f = true;
     } else {
       i++;
@@ -36,8 +35,8 @@ uint64_t nextPrime(uint64_t value) {
 
 uint64_t sumPrime(uint64_t hbound) {
   uint64_t summa = 0;
-  for (uint64_t i = 2; i<hbound; i++)
+  for (uint64_t i = 2; i < hbound; i++)
     if (checkPrime(i) == true)
-      summa+=i;
+      summa += i;
   return summa;
 }
